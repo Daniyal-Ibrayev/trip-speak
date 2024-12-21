@@ -80,15 +80,16 @@ export const HistoryCard = ({ styles }: Props) => {
                 <CardTitle>История переводов</CardTitle>
             </CardHeader>
             <CardContent>
-            <ScrollArea className="h-fit">
-                <div className="flex flex-wrap gap-3">
-                    {translationHistory.map(p => (
-                        <Snippet
-                            originalPhrase={p.originalPhrase}
-                            translatedPhrase={p.translatedPhrase}
-                        />
-                    ))}
-                </div>
+                <ScrollArea className="h-fit">
+                    <div className="flex flex-wrap gap-3">
+                        {translationHistory.map((p, i) => (
+                            <Snippet
+                                key={i}
+                                originalPhrase={p.originalPhrase}
+                                translatedPhrase={p.translatedPhrase}
+                            />
+                        ))}
+                    </div>
                 </ScrollArea>
             </CardContent>
 

@@ -97,7 +97,7 @@ const popularPhrases = [
         originalPhrase: "what is your name?",
         translatedPhrase: "как тебя зовут?"
     },
-   
+
 ];
 
 export const PopularPhrasesCard = ({ styles }: Props) => {
@@ -109,8 +109,9 @@ export const PopularPhrasesCard = ({ styles }: Props) => {
             <CardContent>
                 <ScrollArea className="h-56">
                     <div className="flex flex-wrap gap-3">
-                        {popularPhrases.map(p => (
+                        {popularPhrases.map((p, i) => (
                             <Snippet
+                                key={i}
                                 originalPhrase={p.originalPhrase}
                                 translatedPhrase={p.translatedPhrase}
                             />

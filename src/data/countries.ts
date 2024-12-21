@@ -2,311 +2,219 @@ import { Country } from "./types";
 
 export const countries: Country[] = [
   {
+    id: 1,
     code: 'AD',
-    nameEnglish: 'Andorra',
-    nameRussian: 'Андорра',
-    language: 'Catalan'
+    name: 'Андорра',
+    language: 'Каталонский'
   },
   {
+    id: 2,
     code: 'AT',
-    nameEnglish: 'Austria',
-    nameRussian: 'Австрия',
-    language: 'German'
+    name: 'Австрия',
+    language: 'Немецкий'
   },
   {
+    id: 3,
     code: 'BY',
-    nameEnglish: 'Belarus',
-    nameRussian: 'Беларусь',
-    language: 'Russian'
+    name: 'Беларусь',
+    language: 'Русский'
   },
   {
+    id: 4,
     code: 'BE',
-    nameEnglish: 'Belgium',
-    nameRussian: 'Бельгия',
-    language: 'Dutch'
+    name: 'Бельгия',
+    language: 'Голландский'
   },
   {
+    id: 5,
     code: 'BG',
-    nameEnglish: 'Bulgaria',
-    nameRussian: 'Болгария',
-    language: 'Bulgarian'
+    name: 'Болгария',
+    language: 'Болгарский'
   },
   {
+    id: 6,
     code: 'HR',
-    nameEnglish: 'Croatia',
-    nameRussian: 'Хорватия',
-    language: 'Croatian'
+    name: 'Хорватия',
+    language: 'Хорватский'
   },
   {
+    id: 7,
     code: 'CY',
-    nameEnglish: 'Cyprus',
-    nameRussian: 'Кипр',
-    language: 'Greek'
+    name: 'Кипр',
+    language: 'Греческий'
   },
   {
+    id: 8,
     code: 'CZ',
-    nameEnglish: 'Czech Republic',
-    nameRussian: 'Чехия',
-    language: 'Czech'
+    name: 'Чехия',
+    language: 'Чешский'
   },
   {
+    id: 9,
     code: 'DK',
-    nameEnglish: 'Denmark',
-    nameRussian: 'Дания',
-    language: 'Danish'
+    name: 'Дания',
+    language: 'Датский'
   },
   {
+    id: 10,
     code: 'EE',
-    nameEnglish: 'Estonia',
-    nameRussian: 'Эстония',
-    language: 'Estonian'
+    name: 'Эстония',
+    language: 'Эстонский'
   },
   {
+    id: 11,
     code: 'FI',
-    nameEnglish: 'Finland',
-    nameRussian: 'Финляндия',
-    language: 'Finnish'
+    name: 'Финляндия',
+    language: 'Финский'
   },
   {
+    id: 12,
     code: 'FR',
-    nameEnglish: 'France',
-    nameRussian: 'Франция',
-    language: 'French'
+    name: 'Франция',
+    language: 'Французский'
   },
   {
+    id: 13,
     code: 'DE',
-    nameEnglish: 'Germany',
-    nameRussian: 'Германия',
-    language: 'German'
+    name: 'Германия',
+    language: 'Немецкий'
   },
   {
+    id: 14,
     code: 'GR',
-    nameEnglish: 'Greece',
-    nameRussian: 'Греция',
-    language: 'Greek'
+    name: 'Греция',
+    language: 'Греческий'
   },
   {
+    id: 15,
     code: 'HU',
-    nameEnglish: 'Hungary',
-    nameRussian: 'Венгрия',
-    language: 'Hungarian'
+    name: 'Венгрия',
+    language: 'Венгерский'
   },
   {
+    id: 16,
     code: 'IS',
-    nameEnglish: 'Iceland',
-    nameRussian: 'Исландия',
-    language: 'Icelandic'
+    name: 'Исландия',
+    language: 'Исландский'
   },
   {
+    id: 17,
     code: 'IE',
-    nameEnglish: 'Ireland',
-    nameRussian: 'Ирландия',
-    language: 'English'
+    name: 'Ирландия',
+    language: 'Английский'
   },
   {
+    id: 18,
     code: 'IT',
-    nameEnglish: 'Italy',
-    nameRussian: 'Италия',
-    language: 'Italian'
+    name: 'Италия',
+    language: 'Итальянский'
   },
   {
+    id: 19,
     code: 'LV',
-    nameEnglish: 'Latvia',
-    nameRussian: 'Латвия',
-    language: 'Latvian'
+    name: 'Латвия',
+    language: 'Латышский'
   },
   {
+    id: 20,
     code: 'LT',
-    nameEnglish: 'Lithuania',
-    nameRussian: 'Литва',
-    language: 'Lithuanian'
+    name: 'Литва',
+    language: 'Литовский'
   },
   {
+    id: 21,
     code: 'LU',
-    nameEnglish: 'Luxembourg',
-    nameRussian: 'Люксембург',
-    language: 'Luxembourgish'
+    name: 'Люксембург',
+    language: 'Люксембургский'
   },
   {
+    id: 22,
     code: 'MD',
-    nameEnglish: 'Moldova',
-    nameRussian: 'Молдова',
-    language: 'Romanian'
+    name: 'Молдова',
+    language: 'Румынский'
   },
   {
+    id: 23,
     code: 'MC',
-    nameEnglish: 'Monaco',
-    nameRussian: 'Монако',
-    language: 'French'
+    name: 'Монако',
+    language: 'Французский'
   },
   {
+    id: 24,
     code: 'NL',
-    nameEnglish: 'Netherlands',
-    nameRussian: 'Нидерланды',
-    language: 'Dutch'
+    name: 'Нидерланды',
+    language: 'Голландский'
   },
   {
+    id: 25,
     code: 'NO',
-    nameEnglish: 'Norway',
-    nameRussian: 'Норвегия',
-    language: 'Norwegian'
+    name: 'Норвегия',
+    language: 'Норвежский'
   },
   {
+    id: 26,
     code: 'PL',
-    nameEnglish: 'Poland',
-    nameRussian: 'Польша',
-    language: 'Polish'
+    name: 'Польша',
+    language: 'Польский'
   },
   {
+    id: 27,
     code: 'PT',
-    nameEnglish: 'Portugal',
-    nameRussian: 'Португалия',
-    language: 'Portuguese'
+    name: 'Португалия',
+    language: 'Португальский'
   },
   {
+    id: 28,
     code: 'RO',
-    nameEnglish: 'Romania',
-    nameRussian: 'Румыния',
-    language: 'Romanian'
+    name: 'Румыния',
+    language: 'Румынский'
   },
   {
+    id: 29,
     code: 'RU',
-    nameEnglish: 'Russia',
-    nameRussian: 'Россия',
-    language: 'Russian'
+    name: 'Россия',
+    language: 'Русский'
   },
   {
+    id: 30,
     code: 'SK',
-    nameEnglish: 'Slovakia',
-    nameRussian: 'Словакия',
-    language: 'Slovak'
+    name: 'Словакия',
+    language: 'Словацкий'
   },
   {
+    id: 31,
     code: 'SI',
-    nameEnglish: 'Slovenia',
-    nameRussian: 'Словения',
-    language: 'Slovene'
+    name: 'Словения',
+    language: 'Словенский'
   },
   {
+    id: 32,
     code: 'ES',
-    nameEnglish: 'Spain',
-    nameRussian: 'Испания',
-    language: 'Spanish'
+    name: 'Испания',
+    language: 'Испанский'
   },
   {
+    id: 33,
     code: 'SE',
-    nameEnglish: 'Sweden',
-    nameRussian: 'Швеция',
-    language: 'Swedish'
+    name: 'Швеция',
+    language: 'Шведский'
   },
   {
+    id: 34,
     code: 'CH',
-    nameEnglish: 'Switzerland',
-    nameRussian: 'Швейцария',
-    language: 'German'
+    name: 'Швейцария',
+    language: 'Немецкий'
   },
   {
+    id: 35,
     code: 'UA',
-    nameEnglish: 'Ukraine',
-    nameRussian: 'Украина',
-    language: 'Ukrainian'
+    name: 'Украина',
+    language: 'Украинский'
   },
   {
+    id: 36,
     code: 'GB',
-    nameEnglish: 'United Kingdom',
-    nameRussian: 'Великобритания',
-    language: 'English'
-  },
-
-  // Asia
-  {
-    code: 'CN',
-    nameEnglish: 'China',
-    nameRussian: 'Китай',
-    language: 'Chinese'
-  },
-  {
-    code: 'JP',
-    nameEnglish: 'Japan',
-    nameRussian: 'Япония',
-    language: 'Japanese'
-  },
-  {
-    code: 'IN',
-    nameEnglish: 'India',
-    nameRussian: 'Индия',
-    language: 'Hindi'
-  },
-  {
-    code: 'KR',
-    nameEnglish: 'South Korea',
-    nameRussian: 'Южная Корея',
-    language: 'Korean'
-  },
-  {
-    code: 'VN',
-    nameEnglish: 'Vietnam',
-    nameRussian: 'Вьетнам',
-    language: 'Vietnamese'
-  },
-  {
-    code: 'TH',
-    nameEnglish: 'Thailand',
-    nameRussian: 'Таиланд',
-    language: 'Thai'
-  },
-  {
-    code: 'PH',
-    nameEnglish: 'Philippines',
-    nameRussian: 'Филиппины',
-    language: 'Filipino'
-  },
-  {
-    code: 'ID',
-    nameEnglish: 'Indonesia',
-    nameRussian: 'Индонезия',
-    language: 'Indonesian'
-  },
-  {
-    code: 'MY',
-    nameEnglish: 'Malaysia',
-    nameRussian: 'Малайзия',
-    language: 'Malay'
-  },
-  {
-    code: 'SG',
-    nameEnglish: 'Singapore',
-    nameRussian: 'Сингапур',
-    language: 'English'
-  },
-  {
-    code: 'US',
-    nameEnglish: 'United States',
-    nameRussian: 'США',
-    language: 'English'
-  },
-  {
-    code: 'CA',
-    nameEnglish: 'Canada',
-    nameRussian: 'Канада',
-    language: 'English'
-  },
-  {
-    code: 'AU',
-    nameEnglish: 'Australia',
-    nameRussian: 'Австралия',
-    language: 'English'
-  },
-  {
-    code: 'NZ',
-    nameEnglish: 'New Zealand',
-    nameRussian: 'Новая Зеландия',
-    language: 'English'
-  },
-  {
-    code: 'ZA',
-    nameEnglish: 'South Africa',
-    nameRussian: 'Южная Африка',
-    language: 'English'
+    name: 'Великобритания',
+    language: 'Английский'
   }
 ];
