@@ -20,7 +20,7 @@ export const TranslatorCardFrom = ({ styles }: Props) => {
         <Card className={cn("min-h-52", styles)}>
             <CardHeader>
                 <LanguageSelect
-                    value={languageFrom || country?.language}
+                    value={languageFrom || country?.code}
                     onChange={setLanguageFrom}
                 />
             </CardHeader>
