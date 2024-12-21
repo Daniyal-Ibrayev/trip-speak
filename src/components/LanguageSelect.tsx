@@ -3,23 +3,21 @@ import {
     SelectContent,
     SelectGroup,
     SelectItem,
-    SelectLabel,
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
 import { countries } from "@/data/countries"
 
-export const CountrySelect = () => {
+export const LanguageSelect = () => {
     return (
         <Select>
-            <SelectTrigger className="w-[140px] md:w-[180px]">
-                <SelectValue placeholder="Выберите страну" />
+            <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder="Выберите язык" />
             </SelectTrigger>
             <SelectContent>
                 <SelectGroup>
-                    <SelectLabel>Страна</SelectLabel>
                     {countries.map(c => (
-                        <SelectItem key={c.code} value={c.code}>{c.nameRussian}</SelectItem>
+                        <SelectItem key={c.code} value={c.code}>{c.language}</SelectItem>
                     ))}
                 </SelectGroup>
             </SelectContent>

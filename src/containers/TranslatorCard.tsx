@@ -1,26 +1,24 @@
+import { LanguageSelect } from "@/components/LanguageSelect";
 import {
     Card,
     CardHeader,
-    CardTitle,
-    CardDescription,
     CardContent
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils"
 import { ClassValue } from "clsx";
+import { Textarea } from "@/components/ui/textarea"
 interface Props {
     styles?: ClassValue;
 }
 
 export const TranslatorCard = ({ styles }: Props) => {
-
     return (
-        <Card className={cn("min-h-64", styles)}>
+        <Card className={cn("min-h-52", styles)}>
             <CardHeader>
-                <CardTitle>Переводчик</CardTitle>
-                <CardDescription>Начните писать текст</CardDescription>
+                <LanguageSelect />
             </CardHeader>
             <CardContent>
-                <p>Card Content</p>
+                <Textarea className="h-52 resize-none" placeholder="Начните писать текст" />
             </CardContent>
 
         </Card>
