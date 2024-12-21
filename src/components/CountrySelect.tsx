@@ -19,7 +19,7 @@ export const CountrySelect = () => {
                 <SelectGroup>
                     <SelectLabel>Страна</SelectLabel>
                     {countries.map(c => (
-                        <SelectItem value={c.code}>{c.nameRussian}</SelectItem>
+                        <SelectItem key={c.code} value={c.code}>{c.nameRussian}</SelectItem>
                     ))}
                 </SelectGroup>
             </SelectContent>

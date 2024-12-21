@@ -15,7 +15,7 @@ interface Props {
 export const HistoryCard = ({ styles }: Props) => {
 
     return (
-        <Card className={cn("", styles)}>
+        <Card className={cn("min-h-64", styles)}>
             <CardHeader>
                 <CardTitle>История переводов</CardTitle>
             </CardHeader>

@@ -6,9 +6,9 @@ interface Props {
 
 const Layout = ({children}: Props) => {
     return (
-        <div className="h-auto min-h-screen px-8 bg-slate-100">
+        <div className="h-auto min-h-screen px-10 bg-slate-100 dark:bg-slate-900 ">
             <Header />
-            <div className="mt-10 p-10">
+            <div className="mt-8 px-10">
             {children} 
                 </div>        
                
