@@ -5,9 +5,8 @@ interface Props {
 }
 
 const Layout = ({children}: Props) => {
-    console.log("asdfas")
     return (
-        <div className="h-screen bg-slate-100 ">
+        <div className="h-screen px-8 bg-slate-100">
             <Header />
             {children}
         </div>
