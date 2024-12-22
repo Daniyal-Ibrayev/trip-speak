@@ -19,6 +19,7 @@ export const CountrySelect = () => {
             setCountry(selectedCountry);
         }
     }
+    const sortedCountries = countries.sort((a, b) => a.name.localeCompare(b.name));
 
     return (
         <Select onValueChange={handleChange}>
@@ -26,7 +27,7 @@ export const CountrySelect = () => {
                 <SelectValue placeholder="Выберите страну" />
             </SelectTrigger>
             <SelectContent>
-                {countries.map(c => (
+                {sortedCountries.map(c => (
                     <SelectItem key={c.code} value={c.code}>{c.name}</SelectItem>
                 ))}
             </SelectContent>

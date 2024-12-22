@@ -3,19 +3,19 @@ import { create } from 'zustand';
 
 interface IStore {
     country: Country | null;
-    languageFrom: CountriesCode | null;
-    languageTo: CountriesCode | null;
+    countryCodeFrom: CountriesCode | null;
+    countryCodeTo: CountriesCode | null;
     setCountry: (country: Country) => void;
-    setLanguageFrom: (languageFrom: CountriesCode) => void;
-    setLanguageTo: (languageTo: CountriesCode) => void;
+    setCountryCodeFrom: (countryCodeFrom: CountriesCode) => void;
+    setCountryCodeTo: (countryCodeTo: CountriesCode) => void;
 }
 
 export const useTranslatorStore = create<IStore>((set) => ({
     country: null,
-    languageFrom: null,
-    languageTo: null,
+    countryCodeFrom: null,
+    countryCodeTo: null,
     setCountry: (country) => set({ country }),
-    setLanguageFrom: (languageFrom)  => set({ languageFrom }),
-    setLanguageTo: (languageTo)  => set({ languageTo }),
+    setCountryCodeFrom: (countryCodeFrom)  => set({ countryCodeFrom }),
+    setCountryCodeTo: (countryCodeTo)  => set({ countryCodeTo }),
 }));
 

@@ -12,10 +12,26 @@ interface Props {
     styles?: ClassValue;
 }
 
-const popularPhrases = [
+const popularPhrasesEng = [
+    {
+        originalPhrase: "hello",
+        translatedPhrase: "здравствуйте"
+    },
     {
         originalPhrase: "good morning",
         translatedPhrase: "доброе утро"
+    },
+    {
+        originalPhrase: "good afternoon",
+        translatedPhrase: "добрый день"
+    },
+    {
+        originalPhrase: "good evening",
+        translatedPhrase: "добрый вечер"
+    },
+    {
+        originalPhrase: "good night",
+        translatedPhrase: "доброй ночи"
     },
     {
         originalPhrase: "how are you?",
@@ -30,20 +46,64 @@ const popularPhrases = [
         translatedPhrase: "пожалуйста"
     },
     {
-        originalPhrase: "good night",
-        translatedPhrase: "доброй ночи"
-    },
-    {
-        originalPhrase: "see you later",
-        translatedPhrase: "до встречи"
-    },
-    {
         originalPhrase: "sorry",
         translatedPhrase: "извините"
     },
     {
+        originalPhrase: "excuse me",
+        translatedPhrase: "прошу прощения"
+    },
+    {
+        originalPhrase: "where is the bathroom?",
+        translatedPhrase: "где находится туалет?"
+    },
+    {
+        originalPhrase: "how much does it cost?",
+        translatedPhrase: "сколько это стоит?"
+    },
+    {
+        originalPhrase: "I don't understand",
+        translatedPhrase: "я не понимаю"
+    },
+    {
+        originalPhrase: "do you speak English?",
+        translatedPhrase: "вы говорите по-английски?"
+    },
+    {
+        originalPhrase: "can you help me?",
+        translatedPhrase: "вы можете мне помочь?"
+    },
+    {
+        originalPhrase: "I need a taxi",
+        translatedPhrase: "мне нужен такси"
+    },
+    {
+        originalPhrase: "what's your name?",
+        translatedPhrase: "как вас зовут?"
+    },
+    {
+        originalPhrase: "my name is...",
+        translatedPhrase: "меня зовут..."
+    },
+    {
+        originalPhrase: "where are you from?",
+        translatedPhrase: "откуда вы?"
+    },
+    {
+        originalPhrase: "I'm from...",
+        translatedPhrase: "я из..."
+    },
+    {
+        originalPhrase: "nice to meet you",
+        translatedPhrase: "приятно познакомиться"
+    },
+    {
         originalPhrase: "goodbye",
         translatedPhrase: "до свидания"
+    },
+    {
+        originalPhrase: "see you later",
+        translatedPhrase: "до встречи"
     },
     {
         originalPhrase: "yes",
@@ -53,67 +113,125 @@ const popularPhrases = [
         originalPhrase: "no",
         translatedPhrase: "нет"
     },
+];
+
+const popularPhrasesJap = [
     {
-        originalPhrase: "what's up?",
-        translatedPhrase: "что нового?"
+        originalPhrase: "こんにちは",
+        translatedPhrase: "здравствуйте"
     },
     {
-        originalPhrase: "I love you",
-        translatedPhrase: "я тебя люблю"
+        originalPhrase: "おはようございます",
+        translatedPhrase: "доброе утро"
     },
     {
-        originalPhrase: "happy birthday",
-        translatedPhrase: "с днём рождения"
+        originalPhrase: "こんにちは",
+        translatedPhrase: "добрый день"
     },
     {
-        originalPhrase: "how much is this?",
+        originalPhrase: "こんばんは",
+        translatedPhrase: "добрый вечер"
+    },
+    {
+        originalPhrase: "おやすみなさい",
+        translatedPhrase: "доброй ночи"
+    },
+    {
+        originalPhrase: "お元気ですか？",
+        translatedPhrase: "как дела?"
+    },
+    {
+        originalPhrase: "ありがとうございます",
+        translatedPhrase: "спасибо"
+    },
+    {
+        originalPhrase: "お願いします",
+        translatedPhrase: "пожалуйста"
+    },
+    {
+        originalPhrase: "すみません",
+        translatedPhrase: "извините"
+    },
+    {
+        originalPhrase: "すみません",
+        translatedPhrase: "прошу прощения"
+    },
+    {
+        originalPhrase: "トイレはどこですか？",
+        translatedPhrase: "где находится туалет?"
+    },
+    {
+        originalPhrase: "いくらですか？",
         translatedPhrase: "сколько это стоит?"
     },
     {
-        originalPhrase: "how are you doing?",
-        translatedPhrase: "как ты?"
+        originalPhrase: "わかりません",
+        translatedPhrase: "я не понимаю"
     },
     {
-        originalPhrase: "what time is it?",
-        translatedPhrase: "который час?"
+        originalPhrase: "英語を話せますか？",
+        translatedPhrase: "вы говорите по-английски?"
     },
     {
-        originalPhrase: "I'm sorry",
-        translatedPhrase: "извини"
+        originalPhrase: "助けてくれますか？",
+        translatedPhrase: "вы можете мне помочь?"
     },
     {
-        originalPhrase: "it's okay",
-        translatedPhrase: "всё в порядке"
+        originalPhrase: "タクシーが必要です",
+        translatedPhrase: "мне нужен такси"
     },
     {
-        originalPhrase: "where are you from?",
-        translatedPhrase: "откуда ты?"
+        originalPhrase: "お名前は何ですか？",
+        translatedPhrase: "как вас зовут?"
     },
     {
-        originalPhrase: "I'm fine",
-        translatedPhrase: "я в порядке"
+        originalPhrase: "私の名前は...です",
+        translatedPhrase: "меня зовут..."
     },
     {
-        originalPhrase: "what is your name?",
-        translatedPhrase: "как тебя зовут?"
+        originalPhrase: "どこから来ましたか？",
+        translatedPhrase: "откуда вы?"
     },
-
+    {
+        originalPhrase: "私は...から来ました",
+        translatedPhrase: "я из..."
+    },
+    {
+        originalPhrase: "はじめまして",
+        translatedPhrase: "приятно познакомиться"
+    },
+    {
+        originalPhrase: "さようなら",
+        translatedPhrase: "до свидания"
+    },
+    {
+        originalPhrase: "じゃね",
+        translatedPhrase: "до встречи"
+    },
+    {
+        originalPhrase: "はい",
+        translatedPhrase: "да"
+    },
+    {
+        originalPhrase: "いいえ",
+        translatedPhrase: "нет"
+    },
 ];
 
 export const PopularPhrasesCard = ({ styles }: Props) => {
     return (
-        <Card className={cn("min-h-64 max-h-80", styles)}>
+        <Card className={cn("", styles)}>
             <CardHeader>
                 <CardTitle>Популярные фразы</CardTitle>
             </CardHeader>
             <CardContent>
                 <ScrollArea className="h-56">
                     <div className="flex flex-wrap gap-3">
-                        {popularPhrases.map((p, i) => (
+                        {popularPhrasesEng?.map((p, i) => (
                             <Snippet
                                 key={i}
-                                originalPhrase={p.originalPhrase}
-                                translatedPhrase={p.translatedPhrase}
+                                originalPhrase={p?.originalPhrase}
+                                translatedPhrase={p?.translatedPhrase}
                             />
                         ))}
                     </div>

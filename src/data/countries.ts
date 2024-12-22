@@ -1,5 +1,3 @@
-import { Country } from "./types";
-
 export const countries: Country[] = [
   {
     id: 1,
@@ -216,5 +214,59 @@ export const countries: Country[] = [
     code: 'GB',
     name: 'Великобритания',
     language: 'Английский'
-  }
+  },
+  {
+    id: 37,
+    code: 'US',
+    name: 'США',
+    language: 'Английский'
+  },
+  {
+    id: 38,
+    code: 'CA',
+    name: 'Канада',
+    language: 'Английский'
+  },
+  {
+    id: 39,
+    code: 'AU',
+    name: 'Австралия',
+    language: 'Английский'
+  },
+  {
+    id: 40,
+    code: 'NZ',
+    name: 'Новая Зеландия',
+    language: 'Английский'
+  },
+  {
+    id: 41,
+    code: 'JP',
+    name: 'Япония',
+    language: 'Японский'
+  },
+  {
+    id: 42,
+    code: 'TH',
+    name: 'Таиланд',
+    language: 'Тайский'
+  },
+  {
+    id: 43,
+    code: 'BR',
+    name: 'Бразилия',
+    language: 'Португальский'
+  },
+  {
+    id: 44,
+    code: 'MX',
+    name: 'Мексика',
+    language: 'Испанский'
+  },
+  {
+    id: 45,
+    code: 'AE',
+    name: 'ОАЭ',
+    language: 'Арабский'
+  },
 ];

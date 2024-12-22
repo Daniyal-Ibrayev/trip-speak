@@ -14,3 +14,12 @@ const uniqueLanguages = Array.from(
   ).sort();
 
 export type CountriesLanguage = typeof uniqueLanguages[number];
+
+export interface TranslateTextInput {
+  text: string;
+  targetLanguage: string;
+}
+
+export interface TranslateTextResponse {
+  translatedText: string;
+}

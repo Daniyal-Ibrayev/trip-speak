@@ -15,72 +15,60 @@ interface Props {
 
 const translationHistory = [
     {
-        originalPhrase: "what's up?",
-        translatedPhrase: "что нового?"
+        originalPhrase: "hello where i can find the Hollywood street?",
+        translatedPhrase: "здравствуйте, где я могу найти Голливудскую улицу?"
     },
     {
-        originalPhrase: "I love you",
-        translatedPhrase: "я тебя люблю"
+        originalPhrase: "where can I find a good restaurant?",
+        translatedPhrase: "где я могу найти хороший ресторан?"
     },
     {
-        originalPhrase: "happy birthday",
-        translatedPhrase: "с днём рождения"
+        originalPhrase: "how do I get to Hollywood?",
+        translatedPhrase: "как мне добраться до Голливуда?"
     },
     {
-        originalPhrase: "how much is this?",
-        translatedPhrase: "сколько это стоит?"
+        originalPhrase: "is this the way to the beach?",
+        translatedPhrase: "это дорога на пляж?"
     },
     {
-        originalPhrase: "I don't understand",
-        translatedPhrase: "я не понимаю"
+        originalPhrase: "what time does the last train leave?",
+        translatedPhrase: "во сколько отправляется последний поезд?"
     },
     {
-        originalPhrase: "where is the bathroom?",
-        translatedPhrase: "где туалет?"
+        originalPhrase: "can you recommend a good place to visit?",
+        translatedPhrase: "можешь порекомендовать хорошее место для посещения?"
     },
     {
-        originalPhrase: "I'm hungry",
-        translatedPhrase: "я голоден"
+        originalPhrase: "how far is it to the airport?",
+        translatedPhrase: "как далеко до аэропорта?"
     },
     {
-        originalPhrase: "can you help me?",
-        translatedPhrase: "можешь мне помочь?"
+        originalPhrase: "is it safe to walk around at night?",
+        translatedPhrase: "безопасно ли гулять ночью?"
     },
     {
-        originalPhrase: "congratulations",
-        translatedPhrase: "поздравляю"
+        originalPhrase: "what's the weather like today?",
+        translatedPhrase: "какая сегодня погода?"
     },
     {
-        originalPhrase: "good luck",
-        translatedPhrase: "удачи"
+        originalPhrase: "where can I buy tickets for the movie?",
+        translatedPhrase: "где я могу купить билеты в кино?"
     },
     {
-        originalPhrase: "sorry",
-        translatedPhrase: "извините"
+        originalPhrase: "do I need a reservation for this restaurant?",
+        translatedPhrase: "мне нужно забронировать столик в этом ресторане?"
     },
-    {
-        originalPhrase: "goodbye",
-        translatedPhrase: "до свидания"
-    },
-    {
-        originalPhrase: "yes",
-        translatedPhrase: "да"
-    },
-    {
-        originalPhrase: "no",
-        translatedPhrase: "нет"
-    }
 ];
 
 export const HistoryCard = ({ styles }: Props) => {
 
     return (
-        <Card className={cn("min-h-64", styles)}>
+        <Card className={cn("", styles)}>
             <CardHeader>
                 <CardTitle>История переводов</CardTitle>
             </CardHeader>
             <CardContent>
-                <ScrollArea className="h-fit">
+                <ScrollArea className="h-[70vh]">
                     <div className="flex flex-wrap gap-3">
                         {translationHistory.map((p, i) => (
                             <Snippet
